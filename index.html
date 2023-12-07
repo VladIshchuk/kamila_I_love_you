@@ -4,27 +4,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500&family=Rubik+Bubbles&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
 </head>
 <body class="body">
     <div class="main">
-    <header class="header">
+    <!-- <header class="header">
         <div class="header-cont">
         <a href="" class="header-logo">Kamila</a>
-        <ul class="header_list">
+    </div>
+    </header> -->
+
+    <header class="header">
+        <div class="container">
+            <div class="header-main-cont">
+            <nav class="header-navi">
+                
+            <a href="./index.html" class="header-logo">
+                Kamila
+            </a>
+            <ul class="links">
+                    <div class="active-page"><li class="header-link"><a href="./index.html" class="header-lin current "> <span class="studio-span"> Главная </span></a></li></div>
+                    
+                    <li class="header-link"><a href="./portfolio.html" class="header-lin">Фоточки</a></li>
+                    
+                    <li class="header-link"><a href="" class="header-lin">И ещё что-то</a></li>
+            </ul>
+        
+                <ul class="contacts">
+               <li class="head-tel-mail"> <a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+               <li class="head-tel-mail"> <a href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </nav>
+        </div>
+            </div>
+            <button type="button" class="menu-open" data-menu-open>
+                <svg class="menu-open-icon" width="32" height="22">
+                    <use href="./images/symbol-defs.svg#icon-menu-hamburger-1"></use>
+                </svg>
+            </button>
+        
+            <div class="mob-menu is-hidden" data-menu >
+                <div class="container mobil-cont">
+                <button class="mob-close-btn" data-menu-close>
+                    <svg class="menu-close-icon" width="8" height="8">
+                        <use href="./images/symbol-defs.svg#icon-close-black"></use>
+                    </svg>
+                </button>
+                    <ul class="mob-links-list">
+                        <div class="active-mob-page"><li class="mob-link"><a href="./index.html" class="mob-lin current "> 
+                            <span class="studio-span"> Главная </span></a></li></div>
+                        
+                        <li class="mob-link"><a href="/prephoto.html" class="mob-lin">Фоточки</a></li>
+                        
+                        <li class="mob-link"><a href="" class="mob-lin">И ещё надо придумать</a></li>
+                    </ul>
+                        <div class="mob-bottom-cont">
+                        <ul class="mob-contacts-list">
+                            <li class="tell-link"> <a href="tel:+110001111111" class="mob-tell">+7 978 663 5096</a></li>
+                            <li> <a href="mailto:info@devstudio.com" class="mob-mail">+353 87 453 2478</a></li>
+                            
+                        </ul>
+                    
+                        <ul class="mob-btn-list">
+                            <li class="mob-btn-punkts"><a href="" class="mob-btn-link">
+                                <svg class="team-icon"width="24"height="24">
+                                    <use href="./images/symbol-defs.svg#icon-instagram-1"></use>
+                                </svg>
+                            </a></li>
+                            <li class="mob-btn-punkts"><a href="" class="mob-btn-link"><svg class="team-icon"width="24"height="24">
+                                <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                            </svg></a></li>
+                            <li class="mob-btn-punkts"><a href="" class="mob-btn-link"><svg class="team-icon"width="24"height="24">
+                                <use href="./images/symbol-defs.svg#icon-facebook"></use>
+                            </svg></a></li>
+                            <li class="mob-btn-punkts"><a href="" class="mob-btn-link"><svg class="team-icon"width="24"height="24">
+                                <use href="./images/symbol-defs.svg#icon-linkedin"></use>
+                            </svg></a></li>
+                        </ul>
+                    </div>
+            </div>
+        </header>
+        
+    <!-- <section class="hero"> -->
+        <!-- <div class="widget"> -->
+            
+            <!-- <button type="button" class="change-color">magic нахуй</button> -->
+          <!-- </div> -->
+          <!-- <ul class="header_list">
             <li class="header_list-item"><a href="./prephoto.html" class="header-link">фоточки:)</a></li>
             <li class="header_list-item"><a href="" class="header-link">что-то придумаем</a></li>
             <li class="header_list-item"><a href="" class="header-link">тоже что-то выдумаем</a></li>
-        </ul>
-    </div>
-    </header>
+        </ul> -->
+     <!-- </section> -->
      <section class="hero">
-        <div class="widget">
-            <p class="hero-p">Background color: <span class="color">-</span></p>
-            <button type="button" class="change-color">magic нахуй</button>
-          </div>
-     </section>
+        <div class="container hero-bg">
+        <h1 class="hero-txt">
+            Я Люблю тебя Камила!!!
+        </h1>
+        <button name="button" class="hero-button" data-modal-open>
+            <span>Нажми на меня!!!</span>
+        </button>
     </div>
-     <script src="./script.js" type="module"></script>
+    </section>
+
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button type="button" class="modal-close" data-modal-close>
+                <svg class="modal-btn">
+                    <use href="./images/symbol-defs.svg#icon-close-black-18dp-2-1-1"></use>
+                </svg>
+            </button>
+            <!-- <p class="modal-text">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-cont modal-cont-one">
+                <label for="name" class="modal-label ">Name</label>
+                <div class="input-wrap">
+                <input 
+                type="text" 
+                class="modal-input top-input" 
+                name="user-name"
+                required
+                id="name">
+                <svg class="input-svg" width="18px" height="18px">
+                    <use href="./images/symbol-defs.svg#icon-person-black" class="input-use"></use>
+                </svg>
+            </div>
+            </div> -->
+
+            <h2>
+                Камилка, солнышко, ты для меня за все эти 4 месяца стала в каком-то плане смыслом жызни,
+                ты та самая ради кого я готов старатся и что-тоделать в этой жызни, 
+                ты та самая которая на протежении 4-х месяев заставляла меня просыпатся по утрам, 
+                ты та самая ради которой я готов менятся, ты та самая без которой мне уже никак, ты та самая кто
+                научил меня по настоящему любить, ты та самая которая заставила поверить в то что в 
+                этой жызни есть ради кого жить, я тебя безумно люблю, я тебе это миллион раз говорил
+                но скажу ещё раз, я тебя люблю больше всего на свете, ты прекрасна, одним словом: <br> <span class="main-txt">ТЫ ТА САМАЯ!!!</span> 
+            </h2>
+    
+            <!-- <div class="modal-cont">
+                <label for="tell" class="modal-label">Phone</label>
+                <div class="input-wrap">
+                <input 
+                type="tel" 
+                class="modal-input"
+                name="user-email"
+                required
+                id="tell">
+                <svg class="input-svg" width="18px" height="24px">
+                    <use href="./images/symbol-defs.svg#icon-phone-black" class="input-use"></use>
+                </svg>
+            </div>
+            </div>
+                
+            <div class="modal-cont mail-modal-cont">
+                <label for="maill" class="modal-label">Email</label>
+                <div class="input-wrap">
+                <input type="email" 
+                class="modal-input" 
+                name="user-tel"
+                id="maill">
+                <svg class="input-svg" width="18px" height="24px">
+                    <use href="./images/symbol-defs.svg#icon-email-black" class="input-use"></use>
+                </svg> -->
+            </div>
+            </div>
+                
+            <div class="modal-cont">
+                <!-- <label for="comment" class="modal-label">Comment</label>
+                <textarea name="" id="" class="modal-area" placeholder="Text input" id="comment"></textarea>
+            </div>
+            <div class="check-cont">
+            <input type="checkbox" name="privacy" id="privacy" value="true" class="input-check visually-hidden">
+            <label for="privacy" class="privacy-label">
+                <span>
+                    <svg class="check-icon" width="10" height="8">
+                        <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                    </svg>
+                </span>
+               <div>I accept the terms and conditions of the <a href="" class="privacy-link">Privacy Policy</a></div>
+            </label> -->
+        </div>
+                
+            </form>
+        </div>
+    
+    </div>
+
+    
+     
+     <script src="./menu.js"></script>
+     <script src="./modal.js"></script>
+
 </body>
 </html>
